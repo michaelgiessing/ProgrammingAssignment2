@@ -2,7 +2,9 @@
 ## create method to store and update the inverse
 ## of the matrix with it.
 
-## Write a short comment describing this function
+## Creates the environment and functions to get and 
+## set the matrix and its inverse.
+## Assumes that the matrix is invertible
 
 makeCacheMatrix <- function(x = matrix()) {
   inv <- NULL
@@ -20,7 +22,8 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## Calculates the inverse of the matrix and Caches it for use later.
+## in the environment created above.
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
